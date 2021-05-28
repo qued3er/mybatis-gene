@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--导入数据源的相关配置 -->
+    <properties resource="jdbc.properties"></properties>
+
+    <!-- context 一般是一个数据源一个context targetRuntime表示生成的风格-->
+    <context id="default" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+<!--        todo:配置一个connectionFactory-->
+        <!-- 官网提供了很多插件，来修改生成entity、mapper、xml等的规则 -->
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin">
+            <property name="useEqualsHashCodeFromRoot" value="true"/>
+        </plugin>
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin">
+            <property name="useToStringFromRoot" value="true"/>
+        </plugin>
+
+        <!-- 指定自定义注释生成器 实现org.mybatis.generator.api.CommentGenerator接口并提供无参构造 -->
+        <commentGenerator type="cn.zzs.mybatis.generator.MyCommentGenerator">
+            <property name="addRemarkComments" value="true"/>
+            <property name="dateFormat" value="yyyy-MM-dd HH:mm:ss"/>
+        </commentGenerator>
+
+        <!--jdbc的数据库连接 -->
+        <jdbcConnection
+                driverClass="${jdbc.driver}"
+                connectionURL="${jdbc.url}"
+                userId="${jdbc.username}"
+                password="${jdbc.password}">
+        </jdbcConnection>
+
+        <!-- 类型解析器 -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="true"/>
+        </javaTypeResolver>
+
+        <!-- 实体类 指定 targetPackage 的源文件夹。-->
+        <javaModelGenerator
+                targetPackage="com.sensetime.gene.entity"
+                targetProject=".\src\main\java">
+            <!-- <property name="rootClass" value="cn.zzs.mybatis.entity.EntityClass"/> -->
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- xml -->
+        <sqlMapGenerator
+                targetPackage="com.sensetime.gene.xml"
+                targetProject=".\src\main\resources">
+        </sqlMapGenerator>
+
+        <!-- Mapper接口 -->
+        <javaClientGenerator type="MIXEDMAPPER"
+                             targetPackage="com.sensetime.gene.mapper"
+                             targetProject=".\src\main\java">
+            <!-- <property name="rootInterface" value="cn.zzs.mybatis.entity.BaseMapper"/> -->
+        </javaClientGenerator>
+
+
+
+        <!-- 指定数据库表,修改的时候 可以使用sql的通配符一次生成多个 -->
+        <table tableName="user" >
+<!--            实体类的类名指定-->
+<!--            <domainObjectRenamingRule searchString="^Demo" replaceString=""/>-->
+        </table>
+    </context>
+</generatorConfiguration>
