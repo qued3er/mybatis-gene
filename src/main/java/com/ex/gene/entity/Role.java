@@ -3,7 +3,7 @@ package com.ex.gene.entity;
 import java.util.Date;
 
 /**
- *  角色表
+ *  lishuaiqi分支的部分提交 活只干了一半
  *
  * 对应数据库表： role
  *
