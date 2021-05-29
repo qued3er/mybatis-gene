@@ -3,6 +3,7 @@ package com.ex.gene.entity;
 import java.util.Date;
 
 /**
+ * 解决了issue214
  *  角色表
  *
  * 对应数据库表： role
