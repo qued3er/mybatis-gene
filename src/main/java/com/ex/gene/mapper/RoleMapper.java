@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
+
 /**
  * role的dao层就恶口
  * @author lmm
@@ -15,8 +16,8 @@ import org.apache.ibatis.annotations.Update;
 public interface RoleMapper {
     /**
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
      * @param id 
      * @return 
      */
@@ -28,8 +29,8 @@ public interface RoleMapper {
 
     /**
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
      * @param record 
      * @return 
      */
@@ -45,8 +46,8 @@ public interface RoleMapper {
 
     /**
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
      * @param record 
      * @return 
      */
@@ -54,8 +55,8 @@ public interface RoleMapper {
 
     /**
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
      * @param id 
      * @return 
      */
@@ -70,8 +71,8 @@ public interface RoleMapper {
 
     /**
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
      * @param record 
      * @return 
      */
@@ -79,8 +80,8 @@ public interface RoleMapper {
 
     /**
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
      * @param record 
      * @return 
      */

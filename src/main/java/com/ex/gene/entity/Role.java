@@ -5,8 +5,10 @@ import java.util.Date;
 /**
  *  角色表
  *
- * @date 2021-05-28 18:50:13
- * @author lmm
+ * 对应数据库表： role
+ *
+ * @date 2021-05-28 18:37:26
+ * @author lishuaiqi
  */
 public class Role {
     /**
@@ -55,8 +57,10 @@ public class Role {
      *
      * @return 数据库表的 role.id字段
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public Integer getId() {
         return id;
@@ -67,8 +71,10 @@ public class Role {
      *
      * @param id 角色ID
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public void setId(Integer id) {
         this.id = id;
@@ -78,8 +84,10 @@ public class Role {
      *
      * @return 数据库表的 role.role_name字段
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public String getRoleName() {
         return roleName;
@@ -90,8 +98,10 @@ public class Role {
      *
      * @param roleName 角色名
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public void setRoleName(String roleName) {
         this.roleName = roleName == null ? null : roleName.trim();
@@ -101,8 +111,9 @@ public class Role {
      *
      * @return 数据库表的 role.enabled字段
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public Boolean getEnabled() {
         return enabled;
@@ -113,8 +124,9 @@ public class Role {
      *
      * @param enabled 有效标志
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
@@ -124,8 +136,9 @@ public class Role {
      *
      * @return 数据库表的 role.create_time字段
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public Date getCreateTime() {
         return createTime;
@@ -136,8 +149,9 @@ public class Role {
      *
      * @param createTime 创建时间
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
@@ -147,8 +161,9 @@ public class Role {
      *
      * @return 数据库表的 role.update_time字段
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public Date getUpdateTime() {
         return updateTime;
@@ -159,8 +174,9 @@ public class Role {
      *
      * @param updateTime 更新时间
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
@@ -170,8 +186,9 @@ public class Role {
      *
      * @return 数据库表的 role.deleted字段
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public Boolean getDeleted() {
         return deleted;
@@ -182,8 +199,9 @@ public class Role {
      *
      * @param deleted 逻辑删除
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      */
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
@@ -191,8 +209,9 @@ public class Role {
 
     /**
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
+
      * @param that 
      * @return 
      */
@@ -218,8 +237,8 @@ public class Role {
 
     /**
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
      * @return 
      */
     @Override
@@ -237,8 +256,8 @@ public class Role {
 
     /**
      *
-     * @date 2021-05-28 18:50:13
-     * @author lmm
+     * @date 2021-05-28 18:37:26
+     * @author lishuaiqi
      * @return 
      */
     @Override
